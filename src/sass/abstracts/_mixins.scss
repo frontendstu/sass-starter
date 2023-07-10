@@ -1,0 +1,42 @@
+// Event Mixins
+@mixin link {
+  &:link {
+    @content;
+  }
+}
+
+@mixin visited {
+  &:visited {
+    @content;
+  }
+}
+
+@mixin active {
+  &:active {
+    @content;
+  }
+}
+
+@mixin hover {
+  &:hover {
+    @content;
+  }
+}
+
+@mixin focus {
+  &:focus {
+    @content;
+  }
+}
+
+@mixin focus-within {
+  &:focus-within {
+    @content;
+  }
+}
+
+@mixin focus-visible {
+  &:focus-visible {
+    @content;
+  }
+}
