@@ -57,3 +57,19 @@
   grid-template-columns: repeat($columns, 1fr);
   grid-gap: $gap;
 }
+
+// Font Face Import
+// Usage:
+// @include mixin.font-face(
+//   $font-family: 'Font Name',
+//   $font-path: 'url-to-font',
+//   $font-weight: font-weight-range
+// );
+@mixin font-face($font-family, $font-path, $font-weight, $font-style: normal) {
+  @font-face {
+    font-family: #{$font-family};
+    font-display: swap;
+    font-weight: #{$font-weight};
+    src: url(#{$font-path});
+  }
+}
