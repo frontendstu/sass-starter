@@ -49,3 +49,11 @@
   align-items: center;
   justify-content: center;
 }
+
+// Grid
+// Usage: @include mixin.grid(3, 1.875rem) { ... }
+@mixin grid($columns, $gap) {
+  display: grid;
+  grid-template-columns: repeat($columns, 1fr);
+  grid-gap: $gap;
+}
