@@ -41,3 +41,11 @@
     @content;
   }
 }
+
+// Flexbox
+// Useage: @include mixin.flex;
+@mixin flex {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
