@@ -10,16 +10,20 @@
     "url": ""
   },
   "scripts": {
-    "build:sass": "sass --no-source-map src/sass:public/css",
+    "build:sass": "sass  --no-source-map src/sass:public/css",
+    "copy:assets": "copyfiles -u 1 ./src/assets/{images,fonts}/**/* public",
     "copy:html": "copyfiles -u 1 ./src/*.html public",
+    "copy:js": "copyfiles -u 1 ./src/js/**/* public",
     "copy": "npm-run-all --parallel copy:*",
+    "watch:assets": "onchange '/src/assets/**/*' -- npm run copy:assets",
     "watch:html": "onchange 'src/*.html' -- npm run copy:html",
-    "watch:sass": "sass --no-source-map --watch src/sass:public/css",
+    "watch:js": "onchange 'src/js/**/*' -- npm run copy:js",
+    "watch:sass": "sass  --no-source-map --watch src/sass:public/css",
     "watch": "npm-run-all --parallel watch:*",
     "serve": "browser-sync start --server public --files public",
     "start": "npm-run-all copy --parallel watch serve",
     "build": "npm-run-all copy:html build:*",
-    "postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r no-map"
+    "postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r --no-map"
   },
   "dependencies": {
     "autoprefixer": "^10.4.14",
