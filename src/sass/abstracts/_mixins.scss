@@ -31,6 +31,13 @@
   }
 }
 
+@mixin hover-focus-within {
+  &:hover,
+  &:focus-within {
+    @content;
+  }
+}
+
 @mixin focus {
   &:focus {
     @content;
