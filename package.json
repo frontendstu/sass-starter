@@ -11,7 +11,7 @@
   },
   "scripts": {
     "build:sass": "sass  --no-source-map src/sass:public/css",
-    "copy:assets": "copyfiles -u 1 ./src/assets/{images,fonts}/**/* public",
+    "copy:assets": "copyfiles -u 1 ./src/assets/{images,fonts}/**/**/**/* public",
     "copy:html": "copyfiles -u 1 ./src/*.html public",
     "copy:js": "copyfiles -u 1 ./src/js/**/* public",
     "copy": "npm-run-all --parallel copy:*",
