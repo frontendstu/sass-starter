@@ -58,10 +58,11 @@
 
 // Flexbox
 // Useage: @include mixin.flex;
-@mixin flex {
+@mixin flex($flex-direction: null) {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: $flex-direction;
 }
 
 // Grid
