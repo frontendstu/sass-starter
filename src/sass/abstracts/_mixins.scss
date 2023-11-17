@@ -88,3 +88,11 @@
     src: url(#{$font-path});
   }
 }
+
+// Size
+// Usage:
+// @include mixin.size($width: ..., $height: ...);
+@mixin size($width: null, $height: null) {
+  width: $width;
+  height: $height;
+}
