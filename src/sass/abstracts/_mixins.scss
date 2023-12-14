@@ -68,7 +68,7 @@
 
 // Grid
 // Usage: @include mixin.grid(3, 1.875rem) { ... }
-@mixin grid($columns, $gap) {
+@mixin grid($columns, $gap: null) {
   display: grid;
   grid-template-columns: repeat($columns, 1fr);
   grid-gap: $gap;
