@@ -58,10 +58,10 @@
 
 // Flexbox
 // Useage: @include mixin.flex;
-@mixin flex($direction: column, $gap: null) {
+@mixin flex($align: center, $justify: center, $direction: column, $gap: null) {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: $align;
+  justify-content: $justify;
   flex-direction: $direction;
   gap: $gap;
 }
