@@ -97,3 +97,10 @@
   width: $width;
   height: $height;
 }
+
+// Centre Body
+// Usage: @include mixin.body-centre
+@mixin body-centre {
+  display: grid;
+  place-content: center;
+}
