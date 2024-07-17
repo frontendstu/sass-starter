@@ -21,4 +21,14 @@
         --container-max-width: 69.375rem;
         --container-padding-inline: 0.5rem;
     }
+
+    // ---------- LAYOUT
+
+    // ----- Header
+    --header-padding-block: 1.5rem;
+    --header-menu-pos-top: 4rem;
+
+    @media (min-width: 48em) {
+        --header-padding-block: 2rem;
+    }
 }
