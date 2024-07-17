@@ -1,77 +1,77 @@
 // Event Mixins
 // Usage: @include mixin.link { ... }
 @mixin link {
-  &:link {
-    @content;
-  }
+    &:link {
+        @content;
+    }
 }
 
 @mixin visited {
-  &:visited {
-    @content;
-  }
+    &:visited {
+        @content;
+    }
 }
 
 @mixin active {
-  &:active {
-    @content;
-  }
+    &:active {
+        @content;
+    }
 }
 
 @mixin hover {
-  &:hover {
-    @content;
-  }
+    &:hover {
+        @content;
+    }
 }
 
 @mixin hover-focus {
-  &:hover,
-  &:focus {
-    @content;
-  }
+    &:hover,
+    &:focus {
+        @content;
+    }
 }
 
 @mixin hover-focus-within {
-  &:hover,
-  &:focus-within {
-    @content;
-  }
+    &:hover,
+    &:focus-within {
+        @content;
+    }
 }
 
 @mixin focus {
-  &:focus {
-    @content;
-  }
+    &:focus {
+        @content;
+    }
 }
 
 @mixin focus-within {
-  &:focus-within {
-    @content;
-  }
+    &:focus-within {
+        @content;
+    }
 }
 
 @mixin focus-visible {
-  &:focus-visible {
-    @content;
-  }
+    &:focus-visible {
+        @content;
+    }
 }
 
 // Flexbox
 // Useage: @include mixin.flex;
 @mixin flex($align: center, $justify: center, $direction: column, $gap: null) {
-  display: flex;
-  align-items: $align;
-  justify-content: $justify;
-  flex-direction: $direction;
-  gap: $gap;
+    display: flex;
+    align-items: $align;
+    justify-content: $justify;
+    flex-direction: $direction;
+    gap: $gap;
 }
 
 // Grid
 // Usage: @include mixin.grid(3, 1.875rem) { ... }
 @mixin grid($columns, $gap: null) {
-  display: grid;
-  grid-template-columns: repeat($columns, 1fr);
-  grid-gap: $gap;
+    display: grid;
+    grid-template-columns: repeat($columns, 1fr);
+    grid-gap: $gap;
 }
 
 // Font Face Import
@@ -82,25 +82,25 @@
 //   $font-weight: font-weight-range
 // );
 @mixin font-face($font-family, $font-path, $font-weight, $font-style: normal) {
-  @font-face {
-    font-family: #{$font-family};
-    font-display: swap;
-    font-weight: #{$font-weight};
-    src: url(#{$font-path});
-  }
+    @font-face {
+        font-family: #{$font-family};
+        font-display: swap;
+        font-weight: #{$font-weight};
+        src: url(#{$font-path});
+    }
 }
 
 // Size
 // Usage:
 // @include mixin.size($width: ..., $height: ...);
 @mixin size($width: null, $height: null) {
-  width: $width;
-  height: $height;
+    width: $width;
+    height: $height;
 }
 
 // Centre Body
 // Usage: @include mixin.body-centre
 @mixin body-centre {
-  display: grid;
-  place-content: center;
+    display: grid;
+    place-content: center;
 }
