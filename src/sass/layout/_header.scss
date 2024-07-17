@@ -1,1 +1,85 @@
 @use '../abstracts/mixins' as mixin;
+
+/* ------------------------------- */
+/* Header                          */
+/* ------------------------------- */
+
+.header {
+    padding-block: var(--header-padding-block);
+
+    &__wrapper {
+        @include mixin.flex($direction: row);
+        justify-content: space-between;
+    }
+
+    /*
+    &__branding {
+        // Add header branding styles here
+    }
+    */
+
+    &__toggle {
+        display: none;
+        border: 0;
+        background: transparent;
+        cursor: pointer;
+
+        .menu-open-icon {
+            display: block;
+        }
+
+        .menu-close-icon {
+            display: none;
+        }
+
+        &[aria-expanded='true'] {
+            .menu-open-icon {
+                display: none;
+            }
+
+            .menu-close-icon {
+                display: block;
+            }
+        }
+
+        @media (max-width: 89.98em) {
+            display: block;
+        }
+    }
+
+    &__menu {
+        @media (max-width: 89.98em) {
+            display: none;
+            position: absolute;
+            width: 100%;
+
+            &[data-visible] {
+                @include mixin.flex;
+
+                display: block;
+                top: var(--header-menu-pos-top);
+            }
+        }
+
+        @media (min-width: 90em) {
+            margin-inline: unset;
+        }
+
+        &-items {
+            --menu-gap: 1rem;
+
+            @media (max-width: 89.99em) {
+                li {
+                    margin-block: var(--menu-gap);
+                    text-align: center;
+                }
+            }
+
+            @media (min-width: 90em) {
+                display: inline-flex;
+                align-items: center;
+                gap: var(--menu-gap);
+            }
+        }
+    }
+}
