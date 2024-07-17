@@ -1,2 +1,16 @@
 :root {
+    // ---------- UTILITIES
+
+    // ----- Container
+    --container-max-width: 21.375rem;
+    --container-padding-inline: 0.25rem;
+
+    @media (min-width: 48em) {
+        --container-max-width: 43rem;
+    }
+
+    @media (min-width: 90em) {
+        --container-max-width: 69.375rem;
+        --container-padding-inline: 0.5rem;
+    }
 }
