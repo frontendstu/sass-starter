@@ -1,1 +1,11 @@
 @use '../abstracts/mixins' as mixin;
+
+/* ------------------------------- */
+/* Container                       */
+/* ------------------------------- */
+
+.container {
+    max-width: var(--container-max-width);
+    padding-inline: var(--container-padding-inline);
+    margin-inline: auto;
+}
