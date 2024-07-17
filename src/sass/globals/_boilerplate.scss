@@ -1,1 +1,9 @@
 @use '../abstracts/mixins' as mixin;
+
+/* ------------------------------- */
+/* Body                            */
+/* ------------------------------- */
+
+body {
+    font-family: var(--ff-sans-serif);
+}
