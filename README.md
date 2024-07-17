@@ -6,8 +6,8 @@ A barebones starter template to get your app off the ground quickly. Featuring l
 
 In order to use Sass Starter, you will need the following installed on your machine:
 
--   Node.js v18.16.1 (https://nodejs.org/en)
--   NPM v9.7.2 (https://www.npmjs.com/)
+-   Node.js v22.4.1 (https://nodejs.org/en)
+-   NPM v10.8.1 (https://www.npmjs.com/)
 
 ## Clone Repository
 
