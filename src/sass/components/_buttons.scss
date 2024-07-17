@@ -1,1 +1,11 @@
 @use '../abstracts/mixins' as mixin;
+
+/* ------------------------------- */
+/* Buttons                         */
+/* ------------------------------- */
+
+.btn {
+    padding: var(--btn-padding);
+    border-radius: var(--btn-radius);
+    border: var(--btn-border);
+}
