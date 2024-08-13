@@ -17,15 +17,6 @@
     --container-max-width: 21.375rem;
     --container-padding-inline: 0.25rem;
 
-    @media (min-width: 48em) {
-        --container-max-width: 43rem;
-    }
-
-    @media (min-width: 90em) {
-        --container-max-width: 69.375rem;
-        --container-padding-inline: 0.5rem;
-    }
-
     // ---------- COMPONENTS
 
     // ----- Buttons
@@ -39,7 +30,18 @@
     --header-padding-block: 1.5rem;
     --header-menu-pos-top: 4rem;
 
-    @media (min-width: 48em) {
+    // ---------- MEDIA QUERIES
+
+    // ----- 768px
+    @media(min-width: 48em) {
+        --container-max-width: 43rem;
+        
         --header-padding-block: 2rem;
+    }
+
+    // ----- 1440px
+    @media(min-width: 90em) {
+        --container-max-width: 69.375rem;
+        --container-padding-inline: 0.5rem;        
     }
 }
