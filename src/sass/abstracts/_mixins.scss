@@ -112,3 +112,17 @@
     background-size: $bg-size;
     background-position: $bg-pos;
 }
+
+// Position Absolute
+@mixin pos-absolute(
+    $pos-top: null,
+    $pos-right: null,
+    $pos-bottom: null,
+    $pos-left: null
+) {
+    position: absolute;
+    top: $pos-top;
+    right: $pos-right;
+    bottom: $pos-bottom;
+    left: $pos-left;
+}
