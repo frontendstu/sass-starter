@@ -104,3 +104,11 @@
     display: grid;
     place-content: center;
 }
+
+// Background Image
+@mixin bg-img($bg-url, $bg-repeat: no-repeat, $bg-size: null, $bg-pos: null) {
+    background-image: $bg-url;
+    background-repeat: $bg-repeat;
+    background-size: $bg-size;
+    background-position: $bg-pos;
+}
