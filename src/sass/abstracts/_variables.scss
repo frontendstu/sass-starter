@@ -33,15 +33,15 @@
     // ---------- MEDIA QUERIES
 
     // ----- 768px
-    @media(min-width: 48em) {
+    @media (min-width: 48em) {
         --container-max-width: 43rem;
-        
+
         --header-padding-block: 2rem;
     }
 
     // ----- 1440px
-    @media(min-width: 90em) {
+    @media (min-width: 90em) {
         --container-max-width: 69.375rem;
-        --container-padding-inline: 0.5rem;        
+        --container-padding-inline: 0.5rem;
     }
 }
