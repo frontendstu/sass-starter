@@ -8,3 +8,24 @@ body {
     font-size: var(--copy-fs);
     font-family: var(--copy-ff);
 }
+
+/* ------------------------------- */
+/* Links                           */
+/* ------------------------------- */
+
+a {
+    transition: var(--link-transition);
+    color: var(--link-clr);
+    text-decoration: var(--link-decoration);
+
+    @include mixin.hover-focus {
+        color: var(--link-clr-active);
+        text-decoration: var(--link-decoration-active);
+    }
+
+    @include mixin.focus {
+        outline: var(--link-outline);
+        outline-offset: var(--link-outline-offset);
+        border-radius: var(--link-outline-radius);
+    }
+}
