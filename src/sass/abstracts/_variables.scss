@@ -13,6 +13,16 @@
     --copy-ff: var(--ff-sans-serif);
     --copy-fs: 1rem;
 
+    // ----- Links
+    --link-transition: inherit;
+    --link-clr: inherit;
+    --link-clr-active: inherit;
+    --link-decoration: none;
+    --link-decoration-active: underline;
+    --link-outline: 2px solid hsl(198 93% 60%);
+    --link-outline-offset: 3px;
+    --link-outline-radius: 2px;
+
     // ---------- UTILITIES
 
     // ----- Container
