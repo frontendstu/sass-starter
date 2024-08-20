@@ -93,7 +93,7 @@
 // Size
 // Usage:
 // @include mixin.size($width: ..., $height: ...);
-@mixin size($width: null, $height: null) {
+@mixin size($width: 100%, $height: 100%) {
     width: $width;
     height: $height;
 }
