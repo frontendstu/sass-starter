@@ -10,8 +10,12 @@
     // ---------- BOILERPLATE
 
     // ----- Copy
-    --copy-ff: var(--ff-sans-serif);
-    --copy-fs: 1rem;
+    --copy-clr: inherit;
+    --copy-fs: inherit;
+    --copy-fw: inherit;
+    --copy-ff: inherit;
+    --copy-font: inherit;
+    --copy-leading: inherit;
 
     // ----- Links
     --link-transition: inherit;
