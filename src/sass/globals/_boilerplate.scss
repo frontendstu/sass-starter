@@ -5,8 +5,9 @@
 /* ------------------------------- */
 
 body {
-    font-size: var(--copy-fs);
-    font-family: var(--copy-ff);
+    color: var(--copy-clr);
+    font: var(--copy-font);
+    line-height: var(--copy-leading);
 }
 
 /* ------------------------------- */
