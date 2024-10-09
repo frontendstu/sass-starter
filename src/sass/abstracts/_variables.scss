@@ -14,7 +14,7 @@
     --copy-fs: inherit;
     --copy-fw: inherit;
     --copy-ff: inherit;
-    --copy-font: inherit;
+    --copy-font: --copy-font: var(--copy-fw) var(--copy-fs) var(--copy-ff);;
     --copy-leading: inherit;
 
     // ----- Links
