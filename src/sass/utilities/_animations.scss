@@ -1,1 +1,16 @@
 @use '../abstracts/mixins' as mixin;
+
+/* ------------------------------- */
+/* Animations                      */
+/* ------------------------------- */
+
+/* Fade In                         */
+/* ------------------------------- */
+.fade-in {
+    opacity: 0;
+    transition: opacity 600ms ease-in;
+
+    &__active {
+        opacity: 1;
+    }
+}
