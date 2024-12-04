@@ -34,3 +34,22 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 });
+
+/* ------------------------------- */
+/* Section Fade In                 */
+/* ------------------------------- */
+
+const fadeInElements = document.querySelectorAll('.fade-in');
+const fadeInObserver = new IntersectionObserver(
+    (entries) => {
+        entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add('fade-in__active');
+                fadeInObserver.unobserve(entry.target);
+            }
+        });
+    },
+    { threshold: 0.1 }
+);
+
+fadeInElements.forEach((element) => fadeInObserver.observe(element));
