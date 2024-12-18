@@ -11,4 +11,8 @@
     padding: var(--btn-padding);
     border-radius: var(--btn-radius);
     border: var(--btn-border);
+
+    @include mixin.hover-focus-within {
+        text-decoration: none;
+    }
 }
