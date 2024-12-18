@@ -15,4 +15,8 @@
     @include mixin.hover-focus-within {
         text-decoration: none;
     }
+
+    @include mixin.focus-within {
+        border-radius: var(--btn-radius);
+    }
 }
