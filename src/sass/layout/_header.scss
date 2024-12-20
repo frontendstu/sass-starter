@@ -52,9 +52,12 @@
 
         &[data-visible] {
             @include mixin.flex;
-            top: var(--header-menu-pos-top);
-            left: 0;
-            right: 0;
+            @include mixin.pos-absolute(
+                $pos-top: var(--header-menu-pos-top),
+                $pos-left: 0,
+                $pos-right: 0
+            );
+
             background-color: var(--header-menu-bg);
         }
 
