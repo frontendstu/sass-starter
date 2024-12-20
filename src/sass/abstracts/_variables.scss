@@ -64,7 +64,10 @@
 
     // ----- Header
     --header-padding-block: 1.5rem;
-    --header-menu-pos-top: 4rem;
+    --header-bg: hsl(0 0% 100%);
+
+    --header-menu-pos-top: 4.3rem;
+    --header-menu-bg: hsl(100 100% 0% / 0.25);
 
     // ---------- MEDIA QUERIES
 
@@ -73,6 +76,7 @@
         --container-max-width: 43rem;
 
         --header-padding-block: 2rem;
+        --header-menu-bg: transparent;
     }
 
     // ----- 1440px

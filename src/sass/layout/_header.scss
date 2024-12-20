@@ -6,6 +6,7 @@
 
 .header {
     padding-block: var(--header-padding-block);
+    background-color: var(--header-bg);
 
     &__wrapper {
         @include mixin.flex(
@@ -54,6 +55,7 @@
             top: var(--header-menu-pos-top);
             left: 0;
             right: 0;
+            background-color: var(--header-menu-bg);
         }
 
         &-items {
