@@ -78,7 +78,7 @@ Built-In Header
                 <span class="sr-only">Menu</span>
             </button>
 
-            <nav class="header__menu container" id="header-nav">
+            <nav class="header__menu" id="header-nav">
                 <ul
                     role="list"
                     class="header__menu-items"
