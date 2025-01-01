@@ -42,46 +42,46 @@
             }
         }
     }
-
-    &__menu {
-        &-items {
-            --menu-gap: 1rem;
-        }
-    }
 }
 
 @media (max-width: 47.98em) {
-    .header__toggle {
-        display: block;
-    }
-
-    .header__menu {
-        display: none;
-        position: absolute;
-        width: 100%;
-
-        &[data-visible] {
-            @include mixin.flex;
-
+    .header {
+        &__toggle {
             display: block;
-            top: var(--header-menu-pos-top);
         }
-    }
 
-    .header__menu-items li {
-        margin-block: var(--menu-gap);
-        text-align: center;
+        &__menu {
+            @include mixin.pos-absolute($pos-right: 0, $pos-left: 0);
+
+            display: none;
+            width: 100%;
+            padding: 2rem;
+            background-color: rgba(0, 0, 0, 0.25);
+
+            &-items {
+                @include mixin.flex(
+                    $align: flex-start,
+                    $gap: var(--header-menu-items-gap)
+                );
+            }
+
+            &[data-visible] {
+                @include mixin.flex($align: flex-start);
+                top: var(--header-menu-pos-top);
+            }
+        }
     }
 }
 
 @media (min-width: 48em) {
-    .header__menu {
-        margin-inline: unset;
-    }
-
-    .header__menu-items {
-        display: inline-flex;
-        align-items: center;
-        gap: var(--menu-gap);
+    .header {
+        &__menu {
+            &-items {
+                @include mixin.flex(
+                    $direction: row,
+                    $gap: var(--header-menu-items-gap)
+                );
+            }
+        }
     }
 }
