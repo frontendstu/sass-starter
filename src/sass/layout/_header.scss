@@ -51,7 +51,7 @@
         }
 
         &__menu {
-            @include mixin.pos-absolute($pos-right: 0, $pos-left: 0);
+            @include mixin.pos-absolute($right: 0, $left: 0);
 
             display: none;
             width: 100%;
