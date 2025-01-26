@@ -6,17 +6,13 @@
 
 .btn {
     @include mixin.flex;
-
-    width: max-content;
-    padding: var(--btn-padding);
-    border-radius: var(--btn-radius);
-    border: var(--btn-border);
+    @include mixin.btn(
+        $padding: var(--btn-padding),
+        $radius: var(--btn-radius),
+        $border: var(--btn-border)
+    );
 
     @include mixin.hover-focus-within {
-        text-decoration: none;
-    }
-
-    @include mixin.focus-within {
         border-radius: var(--btn-radius);
     }
 }
