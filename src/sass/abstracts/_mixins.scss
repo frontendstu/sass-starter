@@ -121,3 +121,42 @@
     bottom: $bottom;
     left: $left;
 }
+
+// Buttons
+@mixin btn(
+    $width: max-content,
+    $padding: null,
+    $transition: null,
+    $radius: null,
+    $border: null,
+    $border-active: null,
+    $bg: null,
+    $bg-active: null,
+    $clr: null,
+    $clr-active: null,
+    $outline-clr: null,
+    $font-weight: null,
+    $font-size: null,
+    $text-decoration: none,
+    $text-decoration-active: none
+) {
+    width: $width;
+    padding: $padding;
+    transition: $transition;
+    border-radius: $radius;
+    border: $border;
+    background-color: $bg;
+    color: $clr;
+    font-weight: $font-weight;
+    font-size: $font-size;
+    text-decoration: $text-decoration;
+
+    &:hover,
+    &:focus-within {
+        border: $border-active;
+        background-color: $bg-active;
+        color: $clr-active;
+        outline-color: $outline-clr;
+        text-decoration: $text-decoration-active;
+    }
+}
