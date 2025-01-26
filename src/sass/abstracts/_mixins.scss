@@ -114,15 +114,10 @@
 }
 
 // Position Absolute
-@mixin pos-absolute(
-    $pos-top: null,
-    $pos-right: null,
-    $pos-bottom: null,
-    $pos-left: null
-) {
+@mixin pos-absolute($top: null, $right: null, $bottom: null, $left: null) {
     position: absolute;
-    top: $pos-top;
-    right: $pos-right;
-    bottom: $pos-bottom;
-    left: $pos-left;
+    top: $top;
+    right: $right;
+    bottom: $bottom;
+    left: $left;
 }
