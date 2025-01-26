@@ -27,7 +27,7 @@
 
     // ----- Copy
     --copy-clr: inherit;
-    --copy-font: inherit;
+    --copy-font: var(--fw-regular) var(--fs-200) var(--ff-sans-serif);
     --copy-leading: inherit;
 
     // ----- Links
